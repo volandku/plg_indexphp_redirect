@@ -29,7 +29,7 @@ class plgSystemWs_indexphpredirect extends JPlugin
 		$current = rawurldecode($uri->toString(array('scheme', 'host', 'path', 'query', 'fragment')));
 		$scheme=$uri->toString(array('scheme'));
 
-		if ($scheme=="http://")
+		if (TRUE)
 		{
 			// Подумываем про редирект
 			$redirect=TRUE;
@@ -43,6 +43,7 @@ class plgSystemWs_indexphpredirect extends JPlugin
 			{
 				if (strpos($current,'index.php/')!==FALSE)
 				{
+
                     $app = JFactory::getApplication();
                     $app->redirect(str_replace('index.php/','',$current));
                     exit();
