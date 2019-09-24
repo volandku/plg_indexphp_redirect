@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<extension type="plugin" version="3.0" method="upgrade" group="system">
+    <name>ws_indexphpredirect</name>
+    <author>Sergey Bolotov</author>
+    <authorEmail>sales@webstudio.pro</authorEmail>
+    <authorUrl>webstudio.pro</authorUrl>
+    <copyright>(c) webstudio.pro</copyright>
+    <license>GNU\GPL</license>
+    <version>1.0</version>
+    <description>Редирект на index.php/</description>
+    <scriptfile>script.php</scriptfile>
+    <files>
+        <filename plugin="ws_indexphpredirect">ws_indexphpredirect.php</filename>
+        <filename>index.html</filename>
+    </files>
+</extension>
